@@ -1,0 +1,30 @@
+{
+    "sourceFile": "script/script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1673043989139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673044067174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,4 +17,7 @@\n navLinks.forEach((l) => {\n     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })\n })\n \n+$('#myModal').on('shown.bs.modal', function () {\n+    $('#myInput').trigger('focus')\n+  })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673044183973,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,4 @@\n \n navLinks.forEach((l) => {\n     l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })\n })\n-\n-$('#myModal').on('shown.bs.modal', function () {\n-    $('#myInput').trigger('focus')\n-  })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675847299174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,6 @@\n const navLinks = document.querySelectorAll('.nav-item')\n const menuToggle = document.getElementById('navbarSupportedContent')\n \n navLinks.forEach((l) => {\n-    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })\n+    l.addEventListener('click' () => { new bootstrap.Collapse(menuToggle).toggle() })\n })\n"
+                }
+            ],
+            "date": 1673043989139,
+            "name": "Commit-0",
+            "content": "// add class navbarDark on navbar scroll\nconst header = document.querySelector('.navbar');\nconsole.log(header)\nwindow.onscroll = function() {\n    const top = window.scrollY;\n    if(top >=100) {\n        header.classList.add('navbarDark');\n    }\n    else {\n        header.classList.remove('navbarDark');\n    }\n}\n// collapse navbar after click on small devices\nconst navLinks = document.querySelectorAll('.nav-item')\nconst menuToggle = document.getElementById('navbarSupportedContent')\n\nnavLinks.forEach((l) => {\n    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })\n})\n\n"
+        }
+    ]
+}

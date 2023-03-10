@@ -1,0 +1,142 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 31,
+            "patches": [
+                {
+                    "date": 1673047332975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673047381678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background: url('images/');\n+    background: url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675526432222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n .bgimage {\n     height:100vh;\n     background: url('images/sb-blog-programming.png');\n     background-size:cover;\n-    position:relative;\n+    position:abs;\n }\n /* text css above hero image*/\n .hero_title {\n     font-size: 4.5rem;\n"
+                },
+                {
+                    "date": 1675789485997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background: url('images/sb-blog-programming.png');\n+    background: url('./images/sb-blog-programming.png');\n     background-size:cover;\n-    position:abs;\n+    position:absolute;\n }\n /* text css above hero image*/\n .hero_title {\n     font-size: 4.5rem;\n"
+                },
+                {
+                    "date": 1675789508963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background: url('./images/sb-blog-programming.png');\n+\n     background-size:cover;\n     position:absolute;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675789520994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-\n+    background: url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:absolute;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675790455159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background: url('images/sb-blog-programming.png');\n+    background : url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:absolute;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675790460360,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background : url('images/sb-blog-programming.png');\n+   \n     background-size:cover;\n     position:absolute;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675790472550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-   \n+    background: url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:absolute;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675845663701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background: url('images/sb-blog-programming.png');\n+    \n     background-size:cover;\n     position:absolute;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675845789380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    \n+    background: url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:absolute;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675845801844,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n .bgimage {\n     height:100vh;\n     background: url('images/sb-blog-programming.png');\n     background-size:cover;\n-    position:absolute;\n+    position:relative;\n }\n /* text css above hero image*/\n .hero_title {\n     font-size: 4.5rem;\n"
+                },
+                {
+                    "date": 1675847992078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background: url('images/sb-blog-programming.png');\n+    \n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675848040482,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,9 @@\n     background-color: black;\n }\n \n /* hero background image */\n-.bgimage {\n-    height:100vh;\n-    \n-    background-size:cover;\n-    position:relative;\n-}\n+\n /* text css above hero image*/\n .hero_title {\n     font-size: 4.5rem;\n }\n"
+                },
+                {
+                    "date": 1675848052587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,14 @@\n     background-color: black;\n }\n \n /* hero background image */\n-\n+.bgimage {\n+    height:100vh;\n+    \n+    background-size:cover;\n+    position:relative;\n+}\n /* text css above hero image*/\n .hero_title {\n     font-size: 4.5rem;\n }\n"
+                },
+                {
+                    "date": 1675855592086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    \n+    background: url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675855606282,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background: url('images/sb-blog-programming.png');\n+    background: url(images/sb-blog-programming.png');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675855694660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background: url(images/sb-blog-programming.png');\n+    background-ia: url('./../images/sb-blog-programming.png');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675855729237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background-ia: url('./../images/sb-blog-programming.png');\n+    background-image: url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675855845733,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,10 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background-image: url('images/sb-blog-programming.png');\n+    background-image: \n+    url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675855890131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background-image: \n-    url('images/sb-blog-programming.png');\n+    background-image:url('images/');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675855932698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background-image:url('images/');\n+    background-image:url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675856010142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background-image:url('images/sb-blog-programming.png');\n+    background-image:url('images/');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675856019832,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background-image:url('images/');\n+    background-image:url('images/sb-blog-programming.png');\n     background-size:cover;\n     position:relative;\n }\n /* text css above hero image*/\n"
+                },
+                {
+                    "date": 1675856104162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background-image:url('images/sb-blog-programming.png');\n+    background:url('images/sb-blog-programming.png');\n     background-size:cover;\n-    position:relative;\n+    position:abs;\n }\n /* text css above hero image*/\n .hero_title {\n     font-size: 4.5rem;\n"
+                },
+                {
+                    "date": 1675856169654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background:url('images/sb-blog-programming.png');\n+    background-image:url('images/sb-blog-programming.png');\n     background-size:cover;\n-    position:abs;\n+    position:absolute;\n }\n /* text css above hero image*/\n .hero_title {\n     font-size: 4.5rem;\n"
+                },
+                {
+                    "date": 1675856298799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n .bgimage {\n     height:100vh;\n     background-image:url('images/sb-blog-programming.png');\n     background-size:cover;\n-    position:absolute;\n+    position:;\n }\n /* text css above hero image*/\n .hero_title {\n     font-size: 4.5rem;\n"
+                },
+                {
+                    "date": 1675856322730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n \n /* hero background image */\n .bgimage {\n     height:100vh;\n-    background-image:url('images/sb-blog-programming.png');\n+    background:url('images/sb-blog-programming.png');\n     background-size:cover;\n-    position:;\n+    position:relative;\n }\n /* text css above hero image*/\n .hero_title {\n     font-size: 4.5rem;\n"
+                },
+                {
+                    "date": 1675856350264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n .hero_desc {\n     font-size: 2rem;\n }\n .hero-text {\n-    text-align: center;\n+    text-align: \n+    center;\n     position: absolute;\n     top: 50%;\n     left: 50%;\n     transform: translate(-50%, -50%);\n"
+                },
+                {
+                    "date": 1675856431472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n /* display background color black on navbar scroll */\n .navbarScroll.navbarDark {\n     background-color: black;\n+    \n }\n \n /* hero background image */\n .bgimage {\n@@ -17,10 +18,9 @@\n .hero_desc {\n     font-size: 2rem;\n }\n .hero-text {\n-    text-align: \n-    center;\n+    text-align:center;\n     position: absolute;\n     top: 50%;\n     left: 50%;\n     transform: translate(-50%, -50%);\n"
+                },
+                {
+                    "date": 1675856445869,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n /* display background color black on navbar scroll */\n .navbarScroll.navbarDark {\n-    background-color: black;\n-    \n+    background-color: black;\n+\n }\n \n /* hero background image */\n .bgimage {\n"
+                },
+                {
+                    "date": 1675856464150,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n /* display background color black on navbar scroll */\n .navbarScroll.navbarDark {\n-    background-color: black;\n+    background-color: black;\n \n }\n \n /* hero background image */\n"
+                }
+            ],
+            "date": 1673047332975,
+            "name": "Commit-0",
+            "content": "/* display background color black on navbar scroll */\n.navbarScroll.navbarDark {\n    background-color: black;\n}\n\n/* hero background image */\n.bgimage {\n    height:100vh;\n    background: url('images/');\n    background-size:cover;\n    position:relative;\n}\n/* text css above hero image*/\n.hero_title {\n    font-size: 4.5rem;\n}\n.hero_desc {\n    font-size: 2rem;\n}\n.hero-text {\n    text-align: center;\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    color: white;\n}\n\n/* spacing on all sections */\n/* #about, #services, #portfolio, #contact {\n    margin-top: 4rem;\n    padding-top: 4rem;\n} */\n#contact {\n    padding-bottom: 4rem;\n}\n/* about section image css */\n.imageAboutPage {\n    width: 100%;\n}\n\n/* services section css */\n.servicesText.card {\n    height: 280px;\n    cursor: pointer;\n  }\n.servicesIcon {\n    font-size: 36px;\n    text-align: center;\n    width: 100%;\n}\n.card-title {\n    text-align: center;\n}\n.card:hover .servicesIcon {\n    color: #008000;\n}\n.servicesText:hover {\n    border: 1px solid #008000;\n}\n\n/* social media icons styling */\n.social-icons {\n    font-size: 36px;\n    cursor: pointer;\n}\n.fa-facebook:hover,.fa-instagram:hover,.fa-twitter:hover,.fa-linkedin:hover, .fa-twitch:hover {\n    color: #008000;\n}\n.fab {\n    color: #000000;\n}\n/* footer styling */\n#footer {\n    background-color: #808080;\n    text-align: center;\n}"
+        }
+    ]
+}

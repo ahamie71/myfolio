@@ -1,0 +1,422 @@
+{
+    "sourceFile": "contact.php",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 101,
+            "patches": [
+                {
+                    "date": 1673445541447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1673445546651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,59 @@\n-htm\n\\ No newline at end of file\n+<!DOCTYPE html>\n+<html lang=\"en\">\n+<head>\n+    <meta charset=\"UTF-8\">\n+    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n+    <title>Document</title>\n+</head>\n+<body>\n+div class=\"container py-4\">\n+\n+<!-- Bootstrap 5 starter form -->\n+<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\">\n+\n+  <!-- Name input -->\n+  <div class=\"mb-3\">\n+    <label class=\"form-label\" for=\"name\">Name</label>\n+    <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" data-sb-validations=\"required\" />\n+    <div class=\"invalid-feedback\" data-sb-feedback=\"name:required\">Name is required.</div>\n+  </div>\n+\n+  <!-- Email address input -->\n+  <div class=\"mb-3\">\n+    <label class=\"form-label\" for=\"emailAddress\">Email Address</label>\n+    <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\" data-sb-validations=\"required, email\" />\n+    <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:required\">Email Address is required.</div>\n+    <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:email\">Email Address Email is not valid.</div>\n+  </div>\n+\n+  <!-- Message input -->\n+  <div class=\"mb-3\">\n+    <label class=\"form-label\" for=\"message\">Message</label>\n+    <textarea class=\"form-control\" id=\"message\" type=\"text\" placeholder=\"Message\" style=\"height: 10rem;\" data-sb-validations=\"required\"></textarea>\n+    <div class=\"invalid-feedback\" data-sb-feedback=\"message:required\">Message is required.</div>\n+  </div>\n+\n+  <!-- Form submissions success message -->\n+  <div class=\"d-none\" id=\"submitSuccessMessage\">\n+    <div class=\"text-center mb-3\">Form submission successful!</div>\n+  </div>\n+\n+  <!-- Form submissions error message -->\n+  <div class=\"d-none\" id=\"submitErrorMessage\">\n+    <div class=\"text-center text-danger mb-3\">Error sending message!</div>\n+  </div>\n+\n+  <!-- Form submit button -->\n+  <div class=\"d-grid\">\n+    <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\">Submit</button>\n+  </div>\n+\n+</form>\n+\n+</div>\n+\n+<!-- SB Forms JS -->\n+<script src=\"https://cdn.startbootstrap.com/sb-forms-latest.js\"></script>\n+</body>\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673445577426,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Document</title>\n </head>\n <body>\n-div class=\"container py-4\">\n+<div class=\"container py-4\">\n \n <!-- Bootstrap 5 starter form -->\n <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\">\n \n"
+                },
+                {
+                    "date": 1673445602769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n <html lang=\"en\">\n <head>\n     <meta charset=\"UTF-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n+    \n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Document</title>\n </head>\n <body>\n"
+                },
+                {
+                    "date": 1673445620273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html lang=\"en\">\n <head>\n     <meta charset=\"UTF-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n-    \n+    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Document</title>\n </head>\n <body>\n@@ -52,9 +52,10 @@\n \n </form>\n \n </div>\n-\n+<script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js\" integrity=\"sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p\" crossorigin=\"anonymous\"></script>\n+<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js\" integrity=\"sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF\" crossorigin=\"anonymous\"></script>\n <!-- SB Forms JS -->\n <script src=\"https://cdn.startbootstrap.com/sb-forms-latest.js\"></script>\n </body>\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673445767796,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,26 @@\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n <!DOCTYPE html>\n <html lang=\"en\">\n <head>\n     <meta charset=\"UTF-8\">\n"
+                },
+                {
+                    "date": 1673445776751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,8 @@\n \n \n \n \n-\n <!DOCTYPE html>\n <html lang=\"en\">\n <head>\n     <meta charset=\"UTF-8\">\n"
+                },
+                {
+                    "date": 1673445785292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n+<?php\n \n \n+?>\n \n \n \n \n@@ -18,8 +20,9 @@\n \n \n \n \n+\n <!DOCTYPE html>\n <html lang=\"en\">\n <head>\n     <meta charset=\"UTF-8\">\n"
+                },
+                {
+                    "date": 1673446253927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n <?php\n+ if \n \n-\n+ \n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1673446261208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n- if \n+ if(isset($_POST['))\n \n  \n ?>\n \n"
+                },
+                {
+                    "date": 1673446267117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n- if(isset($_POST['))\n+ if(isset($_POST[''))\n \n  \n ?>\n \n"
+                },
+                {
+                    "date": 1673446286831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n   </div>\n \n   <!-- Form submit button -->\n   <div class=\"d-grid\">\n-    <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\">Submit</button>\n+    <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\" name>Submit</button>\n   </div>\n \n </form>\n \n"
+                },
+                {
+                    "date": 1673446299196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n   </div>\n \n   <!-- Form submit button -->\n   <div class=\"d-grid\">\n-    <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\" name>Submit</button>\n+    <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\" name=\"register>Submit</button>\n   </div>\n \n </form>\n \n"
+                },
+                {
+                    "date": 1673446310539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n   </div>\n \n   <!-- Form submit button -->\n   <div class=\"d-grid\">\n-    <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\" name=\"register>Submit</button>\n+    <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\" name=\"register\">Submit</button>\n   </div>\n \n </form>\n \n"
+                },
+                {
+                    "date": 1673446316402,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n- if(isset($_POST[''))\n+ if(isset($_POST['register'))\n \n  \n ?>\n \n"
+                },
+                {
+                    "date": 1673446322244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n- if(isset($_POST['register'))\n+ if(isset($_POST['register']))\n \n  \n ?>\n \n"
+                },
+                {
+                    "date": 1673446334608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <?php\n- if(isset($_POST['register']))\n+ if(isset($_POST['register'])){}\n \n  \n ?>\n \n"
+                },
+                {
+                    "date": 1673446341162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,10 @@\n <?php\n- if(isset($_POST['register'])){}\n+ if(isset($_POST['register'])){\n \n+    if(isset)\n+ }\n+\n  \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446348012,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset)\n+    if(isset($_POST['))\n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446357662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['))\n+    if(isset($_POST['name']) ){\n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446363494,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['name']) ){\n+    if(isset($_POST['name']) && $_POST['email){\n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446371570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['name']) && $_POST['email){\n+    if(isset($_POST['name']) && $_POST['email']) &&{\n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446381510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['name']) && $_POST['email']) &&{\n+    if(isset($_POST['name']) && $_POST['email']) && $_POST['message'] && $_POST['{\n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446397119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['name']) && $_POST['email']) && $_POST['message'] && $_POST['{\n+    if(isset($_POST['name']) && $_POST['email']) && $_POST['message'] \n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446404323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['name']) && $_POST['email']) && $_POST['message'] \n+    if(isset($_POST['name']) && $_POST['email']) && $_POST['message']){}\n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446410209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['name']) && $_POST['email']) && $_POST['message']){}\n+    if(isset($_POST['name']) && $_POST['email']) &&  $_POST['message']){\n+\n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446415728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['name']) && $_POST['email']) &&  $_POST['message']){\n+    if(isset($_POST['name']) && $_POST['email'])  &&  $_POST['message'])){\n \n  }\n \n  \n"
+                },
+                {
+                    "date": 1673446428239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['name']) && $_POST['email'])  &&  $_POST['message'])){\n+    if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']{\n \n  }\n \n  \n"
+                },
+                {
+                    "date": 1673446436580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,10 @@\n  if(isset($_POST['register'])){\n \n     if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']{\n \n+        $name\n+\n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446443894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n  if(isset($_POST['register'])){\n \n     if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']{\n \n-        $name\n+        $name=$_POST\n \n  }\n \n  \n"
+                },
+                {
+                    "date": 1673446449853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n  if(isset($_POST['register'])){\n \n     if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']{\n \n-        $name=$_POST\n+        $name=$_POST['name'];\n \n  }\n \n  \n"
+                },
+                {
+                    "date": 1673446456870,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \n     if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']{\n \n         $name=$_POST['name'];\n+        $\n \n  }\n \n  \n"
+                },
+                {
+                    "date": 1673446462535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \n     if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']{\n \n         $name=$_POST['name'];\n-        $\n+        $email=$_POST['email'];\n \n  }\n \n  \n"
+                },
+                {
+                    "date": 1673446476219,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,11 +2,12 @@\n  if(isset($_POST['register'])){\n \n     if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']{\n \n-        $name=$_POST['name'];\n+        $name=$_POST['name']\n         $email=$_POST['email'];\n \n+\n  }\n \n  \n ?>\n"
+                },
+                {
+                    "date": 1673446483662,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <?php\n  if(isset($_POST['register'])){\n \n-    if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']{\n+    if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']){\n \n-        $name=$_POST['name']\n+        $name=$_POST['name'];\n         $email=$_POST['email'];\n \n \n  }\n"
+                },
+                {
+                    "date": 1673446499454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n     if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']){\n \n         $name=$_POST['name'];\n         $email=$_POST['email'];\n+        $\n \n \n  }\n \n"
+                },
+                {
+                    "date": 1673446531571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n     if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']){\n \n         $name=$_POST['name'];\n         $email=$_POST['email'];\n-        $\n+        $message=$_POST['message'];\n \n \n  }\n \n"
+                },
+                {
+                    "date": 1673446553816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n         $message=$_POST['message'];\n \n \n  }\n+ \n \n  \n ?>\n \n"
+                },
+                {
+                    "date": 1673446568454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         $message=$_POST['message'];\n \n \n  }\n- \n+ $db = new PDO('mysql:host=localhost;dbname=train;charset=utf8', 'root', 'root');\n \n  \n ?>\n \n"
+                },
+                {
+                    "date": 1673446574990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         $message=$_POST['message'];\n \n \n  }\n- $db = new PDO('mysql:host=localhost;dbname=train;charset=utf8', 'root', 'root');\n+ $db = new PDO('mysql:host=localhost;dbname=port;charset=utf8', 'root', 'root');\n \n  \n ?>\n \n"
+                },
+                {
+                    "date": 1673446580645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n         $message=$_POST['message'];\n \n \n  }\n- $db = new PDO('mysql:host=localhost;dbname=port;charset=utf8', 'root', 'root');\n+ $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n \n  \n ?>\n \n"
+                },
+                {
+                    "date": 1673446588141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n \n- \n+  \n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1673446594466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-\n+   \n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446602824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   \n+   $req= $db\n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446615342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   $req= $db\n+   $req= $db->prepare()\n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446620638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   $req= $db->prepare()\n+   $req= $db->prepare(\"INSERT INTO\")\n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446625709,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   $req= $db->prepare(\"INSERT INTO\")\n+   $req= $db->prepare(\"INSERT INTO utli\")\n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446679442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   $req= $db->prepare(\"INSERT INTO utli\")\n+   $req= $db->prepare(\"INSERT INTO user\")\n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446697113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   $req= $db->prepare(\"INSERT INTO user\")\n+   $req= $db->prepare(\"INSERT INTO user(name,password)\")\n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446703950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   $req= $db->prepare(\"INSERT INTO user(name,password)\")\n+   $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES\")\n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446725917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES\")\n+   $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES (\")\n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446732982,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,10 @@\n \n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES (\")\n+   $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES (:name,:email,:message)\");\n+   \n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446740846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,12 @@\n \n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n    $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES (:name,:email,:message)\");\n-   \n+   $req->execute(\n+\n+    \n+   );\n   \n ?>\n \n \n"
+                },
+                {
+                    "date": 1673446747398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,10 +11,10 @@\n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n    $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES (:name,:email,:message)\");\n    $req->execute(\n+     array[]\n \n-    \n    );\n   \n ?>\n \n"
+                },
+                {
+                    "date": 1673446762866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,12 @@\n  }\n  $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n    $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES (:name,:email,:message)\");\n    $req->execute(\n-     array[]\n+     array(\n+        ':name' => $name,\n+                    ':password' => $pass,\n+     )\n \n    );\n   \n ?>\n"
+                },
+                {
+                    "date": 1673446770228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n    $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES (:name,:email,:message)\");\n    $req->execute(\n      array(\n         ':name' => $name,\n-                    ':password' => $pass,\n+       ':' => $pass,\n      )\n \n    );\n   \n"
+                },
+                {
+                    "date": 1673446778725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n    $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES (:name,:email,:message)\");\n    $req->execute(\n      array(\n         ':name' => $name,\n-       ':' => $pass,\n+       ':email' => $email,\n      )\n \n    );\n   \n"
+                },
+                {
+                    "date": 1673446785498,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n    $req->execute(\n      array(\n         ':name' => $name,\n        ':email' => $email,\n+       ':email' => $email,\n      )\n \n    );\n   \n"
+                },
+                {
+                    "date": 1673446793060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n    $req->execute(\n      array(\n         ':name' => $name,\n        ':email' => $email,\n-       ':email' => $email,\n+       ':message' => $message,\n      )\n \n    );\n   \n"
+                },
+                {
+                    "date": 1673446950324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,26 +1,26 @@\n <?php\n- if(isset($_POST['register'])){\n+if (isset($_POST['register'])) {\n \n-    if(isset($_POST['name']) && $_POST['email']  &&  $_POST['message']){\n+    if (isset($_POST['name']) && $_POST['email'] && $_POST['message']) {\n \n-        $name=$_POST['name'];\n-        $email=$_POST['email'];\n-        $message=$_POST['message'];\n+        $name = $_POST['name'];\n+        $email = $_POST['email'];\n+        $message = $_POST['message'];\n \n \n- }\n- $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-   $req= $db->prepare(\"INSERT INTO user(name,email,message) VALUES (:name,:email,:message)\");\n-   $req->execute(\n-     array(\n-        ':name' => $name,\n-       ':email' => $email,\n-       ':message' => $message,\n-     )\n+    }\n+    $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n+    $req = $db->prepare(\"INSERT INTO user(name,email,message) VALUES (:name,:email,:message)\");\n+    $req->execute(\n+        array(\n+            ':name' => $name,\n+            ':email' => $email,\n+            ':message' => $message,\n+        )\n \n-   );\n-  \n+    );\n+}\n ?>\n \n \n \n"
+                },
+                {
+                    "date": 1673446959503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,24 +24,8 @@\n \n \n \n \n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n <!DOCTYPE html>\n <html lang=\"en\">\n <head>\n     <meta charset=\"UTF-8\">\n"
+                },
+                {
+                    "date": 1673447049245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,12 +20,8 @@\n \n     );\n }\n ?>\n-\n-\n-\n-\n <!DOCTYPE html>\n <html lang=\"en\">\n <head>\n     <meta charset=\"UTF-8\">\n"
+                },
+                {
+                    "date": 1673447076760,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \n \n     }\n     $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-    $req = $db->prepare(\"INSERT INTO user(name,email,message) VALUES (:name,:email,:message)\");\n+    $req = $db->prepare(\"INSERT INTO user (name,email,message) VALUES (:name,:email,:message)\");\n     $req->execute(\n         array(\n             ':name' => $name,\n             ':email' => $email,\n"
+                },
+                {
+                    "date": 1673447107070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         $email = $_POST['email'];\n         $message = $_POST['message'];\n \n \n-    }\n+    \n     $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n     $req = $db->prepare(\"INSERT INTO user (name,email,message) VALUES (:name,:email,:message)\");\n     $req->execute(\n         array(\n"
+                },
+                {
+                    "date": 1673447112885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n         )\n \n     );\n }\n+\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n <head>\n"
+                },
+                {
+                    "date": 1673447169692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,21 +7,21 @@\n         $email = $_POST['email'];\n         $message = $_POST['message'];\n \n \n-    \n-    $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-    $req = $db->prepare(\"INSERT INTO user (name,email,message) VALUES (:name,:email,:message)\");\n-    $req->execute(\n-        array(\n-            ':name' => $name,\n-            ':email' => $email,\n-            ':message' => $message,\n-        )\n \n-    );\n+        $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n+        $req = $db->prepare(\"INSERT INTO user (name,email,message) VALUES (:name,:email,:message)\");\n+        $req->execute(\n+            array(\n+                ':name' => $name,\n+                ':email' => $email,\n+                ':message' => $message,\n+            )\n+\n+        );\n+    }\n }\n-\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n <head>\n@@ -34,9 +34,9 @@\n <body>\n <div class=\"container py-4\">\n \n <!-- Bootstrap 5 starter form -->\n-<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\">\n+<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" >\n \n   <!-- Name input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"name\">Name</label>\n"
+                },
+                {
+                    "date": 1673447179351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n <body>\n <div class=\"container py-4\">\n \n <!-- Bootstrap 5 starter form -->\n-<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" >\n+<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"\" >\n \n   <!-- Name input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"name\">Name</label>\n"
+                },
+                {
+                    "date": 1673447186966,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n <body>\n <div class=\"container py-4\">\n \n <!-- Bootstrap 5 starter form -->\n-<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"\" >\n+<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"\" method= po>\n \n   <!-- Name input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"name\">Name</label>\n"
+                },
+                {
+                    "date": 1673447192908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n <body>\n <div class=\"container py-4\">\n \n <!-- Bootstrap 5 starter form -->\n-<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"\" method= po>\n+<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"\" method=\"Post\">\n \n   <!-- Name input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"name\">Name</label>\n"
+                },
+                {
+                    "date": 1673447231927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n <body>\n <div class=\"container py-4\">\n \n <!-- Bootstrap 5 starter form -->\n-<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"\" method=\"Post\">\n+<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" <form action=\"./inscription.php\" method=\"POST\">>\n \n   <!-- Name input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"name\">Name</label>\n"
+                },
+                {
+                    "date": 1673447238335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,9 @@\n <body>\n <div class=\"container py-4\">\n \n <!-- Bootstrap 5 starter form -->\n-<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" <form action=\"./inscription.php\" method=\"POST\">>\n+<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\"  action=\"\" method=\"POST\">>\n \n   <!-- Name input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"name\">Name</label>\n"
+                },
+                {
+                    "date": 1673447303969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,14 +34,14 @@\n <body>\n <div class=\"container py-4\">\n \n <!-- Bootstrap 5 starter form -->\n-<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\"  action=\"\" method=\"POST\">>\n+<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\"  action=\"\" method=\"POST\">\n \n   <!-- Name input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"name\">Name</label>\n-    <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" data-sb-validations=\"required\" />\n+    <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" data-sb-validations=\"required\" name=\"nam/>\n     <div class=\"invalid-feedback\" data-sb-feedback=\"name:required\">Name is required.</div>\n   </div>\n \n   <!-- Email address input -->\n"
+                },
+                {
+                    "date": 1673447313819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,16 +39,16 @@\n \n   <!-- Name input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"name\">Name</label>\n-    <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" data-sb-validations=\"required\" name=\"nam/>\n+    <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" data-sb-validations=\"required\" name=\"name\"/>\n     <div class=\"invalid-feedback\" data-sb-feedback=\"name:required\">Name is required.</div>\n   </div>\n \n   <!-- Email address input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"emailAddress\">Email Address</label>\n-    <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\" data-sb-validations=\"required, email\" />\n+    <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\" data-sb-validations=\"required, email\"  />\n     <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:required\">Email Address is required.</div>\n     <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:email\">Email Address Email is not valid.</div>\n   </div>\n \n"
+                },
+                {
+                    "date": 1673447320711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n \n   <!-- Email address input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"emailAddress\">Email Address</label>\n-    <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\" data-sb-validations=\"required, email\"  />\n+    <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\" data-sb-validations=\"required, email\" name=\"email\" />\n     <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:required\">Email Address is required.</div>\n     <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:email\">Email Address Email is not valid.</div>\n   </div>\n \n"
+                },
+                {
+                    "date": 1673447331418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n \n   <!-- Message input -->\n   <div class=\"mb-3\">\n     <label class=\"form-label\" for=\"message\">Message</label>\n-    <textarea class=\"form-control\" id=\"message\" type=\"text\" placeholder=\"Message\" style=\"height: 10rem;\" data-sb-validations=\"required\"></textarea>\n+    <textarea class=\"form-control\" id=\"message\" type=\"text\" placeholder=\"Message\" style=\"height: 10rem;\" data-sb-validations=\"required\" name=\"message\"></textarea>\n     <div class=\"invalid-feedback\" data-sb-feedback=\"message:required\">Message is required.</div>\n   </div>\n \n   <!-- Form submissions success message -->\n"
+                },
+                {
+                    "date": 1673447410600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,63 +23,76 @@\n }\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n+\n <head>\n     <meta charset=\"UTF-8\">\n     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n-    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">\n+    <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\"\n+        integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n     <title>Document</title>\n </head>\n+\n <body>\n-<div class=\"container py-4\">\n+    <div class=\"container py-4\">\n \n-<!-- Bootstrap 5 starter form -->\n-<form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\"  action=\"\" method=\"POST\">\n+        <!-- Bootstrap 5 starter form -->\n+        <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"\" method=\"POST\">\n \n-  <!-- Name input -->\n-  <div class=\"mb-3\">\n-    <label class=\"form-label\" for=\"name\">Name</label>\n-    <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" data-sb-validations=\"required\" name=\"name\"/>\n-    <div class=\"invalid-feedback\" data-sb-feedback=\"name:required\">Name is required.</div>\n-  </div>\n+            <!-- Name input -->\n+            <div class=\"mb-3\">\n+                <label class=\"form-label\" for=\"name\">Name</label>\n+                <input class=\"form-control\" id=\"name\" type=\"text\" placeholder=\"Name\" data-sb-validations=\"required\"\n+                    name=\"name\" />\n+                <div class=\"invalid-feedback\" data-sb-feedback=\"name:required\">Name is required.</div>\n+            </div>\n \n-  <!-- Email address input -->\n-  <div class=\"mb-3\">\n-    <label class=\"form-label\" for=\"emailAddress\">Email Address</label>\n-    <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\" data-sb-validations=\"required, email\" name=\"email\" />\n-    <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:required\">Email Address is required.</div>\n-    <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:email\">Email Address Email is not valid.</div>\n-  </div>\n+            <!-- Email address input -->\n+            <div class=\"mb-3\">\n+                <label class=\"form-label\" for=\"emailAddress\">Email Address</label>\n+                <input class=\"form-control\" id=\"emailAddress\" type=\"email\" placeholder=\"Email Address\"\n+                    data-sb-validations=\"required, email\" name=\"email\" />\n+                <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:required\">Email Address is required.</div>\n+                <div class=\"invalid-feedback\" data-sb-feedback=\"emailAddress:email\">Email Address Email is not valid.\n+                </div>\n+            </div>\n \n-  <!-- Message input -->\n-  <div class=\"mb-3\">\n-    <label class=\"form-label\" for=\"message\">Message</label>\n-    <textarea class=\"form-control\" id=\"message\" type=\"text\" placeholder=\"Message\" style=\"height: 10rem;\" data-sb-validations=\"required\" name=\"message\"></textarea>\n-    <div class=\"invalid-feedback\" data-sb-feedback=\"message:required\">Message is required.</div>\n-  </div>\n+            <!-- Message input -->\n+            <div class=\"mb-3\">\n+                <label class=\"form-label\" for=\"message\">Message</label>\n+                <textarea class=\"form-control\" id=\"message\" type=\"text\" placeholder=\"Message\" style=\"height: 10rem;\"\n+                    data-sb-validations=\"required\" name=\"message\"></textarea>\n+                <div class=\"invalid-feedback\" data-sb-feedback=\"message:required\">Message is required.</div>\n+            </div>\n \n-  <!-- Form submissions success message -->\n-  <div class=\"d-none\" id=\"submitSuccessMessage\">\n-    <div class=\"text-center mb-3\">Form submission successful!</div>\n-  </div>\n+            <!-- Form submissions success message -->\n+            <div class=\"d-none\" id=\"submitSuccessMessage\">\n+                <div class=\"text-center mb-3\">Form submission successful!</div>\n+            </div>\n \n-  <!-- Form submissions error message -->\n-  <div class=\"d-none\" id=\"submitErrorMessage\">\n-    <div class=\"text-center text-danger mb-3\">Error sending message!</div>\n-  </div>\n+            <!-- Form submissions error message -->\n+            <div class=\"d-none\" id=\"submitErrorMessage\">\n+                <div class=\"text-center text-danger mb-3\">Error sending message!</div>\n+            </div>\n \n-  <!-- Form submit button -->\n-  <div class=\"d-grid\">\n-    <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\" name=\"register\">Submit</button>\n-  </div>\n+            <!-- Form submit button -->\n+            <div class=\"d-grid\">\n+                <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\"\n+                    name=\"register\">Submit</button>\n+            </div>\n \n-</form>\n+        </form>\n \n-</div>\n-<script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js\" integrity=\"sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p\" crossorigin=\"anonymous\"></script>\n-<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js\" integrity=\"sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF\" crossorigin=\"anonymous\"></script>\n-<!-- SB Forms JS -->\n-<script src=\"https://cdn.startbootstrap.com/sb-forms-latest.js\"></script>\n+    </div>\n+    <script src=\"https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js\"\n+        integrity=\"sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p\"\n+        crossorigin=\"anonymous\"></script>\n+    <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js\"\n+        integrity=\"sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF\"\n+        crossorigin=\"anonymous\"></script>\n+    <!-- SB Forms JS -->\n+    <script src=\"https://cdn.startbootstrap.com/sb-forms-latest.js\"></script>\n </body>\n+\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1673447416320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,9 @@\n \n         $name = $_POST['name'];\n         $email = $_POST['email'];\n         $message = $_POST['message'];\n-\n-\n-\n+        \n         $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n         $req = $db->prepare(\"INSERT INTO user (name,email,message) VALUES (:name,:email,:message)\");\n         $req->execute(\n             array(\n"
+                },
+                {
+                    "date": 1673447452317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n \n         $name = $_POST['name'];\n         $email = $_POST['email'];\n         $message = $_POST['message'];\n-        \n+\n         $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-        $req = $db->prepare(\"INSERT INTO user (name,email,message) VALUES (:name,:email,:message)\");\n+        $req = $db->prepare(\"INSERT INTO 'user '(name,email,message) VALUES (:name,:email,:message)\");\n         $req->execute(\n             array(\n                 ':name' => $name,\n                 ':email' => $email,\n"
+                },
+                {
+                    "date": 1673447459007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n         $email = $_POST['email'];\n         $message = $_POST['message'];\n \n         $db = new PDO('mysql:host=localhost;dbname=portfeuille;charset=utf8', 'root', 'root');\n-        $req = $db->prepare(\"INSERT INTO 'user '(name,email,message) VALUES (:name,:email,:message)\");\n+        $req = $db->prepare(\"INSERT INTO user (name,email,message) VALUES (:name,:email,:message)\");\n         $req->execute(\n             array(\n                 ':name' => $name,\n                 ':email' => $email,\n"
+                },
+                {
+                    "date": 1673447563404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <?php\n if (isset($_POST['register'])) {\n \n     if (isset($_POST['name']) && $_POST['email'] && $_POST['message']) {\n-\n+        \n         $name = $_POST['name'];\n         $email = $_POST['email'];\n         $message = $_POST['message'];\n \n"
+                },
+                {
+                    "date": 1673447657226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,9 +35,9 @@\n <body>\n     <div class=\"container py-4\">\n \n         <!-- Bootstrap 5 starter form -->\n-        <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"\" method=\"POST\">\n+        <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"co\" method=\"POST\">\n \n             <!-- Name input -->\n             <div class=\"mb-3\">\n                 <label class=\"form-label\" for=\"name\">Name</label>\n"
+                },
+                {
+                    "date": 1673447713270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,10 @@\n                 ':message' => $message,\n             )\n \n         );\n+\n+        if \n     }\n }\n ?>\n <!DOCTYPE html>\n@@ -35,9 +37,9 @@\n <body>\n     <div class=\"container py-4\">\n \n         <!-- Bootstrap 5 starter form -->\n-        <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"co\" method=\"POST\">\n+        <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"contact.php\" method=\"POST\">\n \n             <!-- Name input -->\n             <div class=\"mb-3\">\n                 <label class=\"form-label\" for=\"name\">Name</label>\n"
+                },
+                {
+                    "date": 1673447718667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             )\n \n         );\n \n-        if \n+        if $re\n     }\n }\n ?>\n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1673447725392,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             )\n \n         );\n \n-        if $re\n+        if($req)\n     }\n }\n ?>\n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1673447739088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n             )\n \n         );\n \n-        if($req)\n+        if($req){}\n     }\n }\n ?>\n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1673447748383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n             )\n \n         );\n \n-        if($req){}\n+        if($req){\n+            echo \"\"\n     }\n }\n ?>\n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1673447754201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n \n         );\n \n         if($req){\n-            echo \"\"\n+            echo \"hello\";\n     }\n }\n ?>\n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1673447760142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         );\n \n         if($req){\n             echo \"hello\";\n-    }\n+    }else\n }\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1673447766124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,11 @@\n         );\n \n         if($req){\n             echo \"hello\";\n-    }else\n+    }else{\n+        echo\n+    }\n }\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n"
+                },
+                {
+                    "date": 1673447771522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \n         if($req){\n             echo \"hello\";\n     }else{\n-        echo\n+        echo \"not good\";\n     }\n }\n ?>\n <!DOCTYPE html>\n"
+                },
+                {
+                    "date": 1673447793019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n     }else{\n         echo \"not good\";\n     }\n }\n+\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n \n"
+                },
+                {
+                    "date": 1673448107824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <?php\n if (isset($_POST['register'])) {\n \n     if (isset($_POST['name']) && $_POST['email'] && $_POST['message']) {\n-        \n+\n         $name = $_POST['name'];\n         $email = $_POST['email'];\n         $message = $_POST['message'];\n \n@@ -17,15 +17,15 @@\n             )\n \n         );\n \n-        if($req){\n+        if ($req) {\n             echo \"hello\";\n-    }else{\n-        echo \"not good\";\n+        } else {\n+            echo \"not good\";\n+        }\n     }\n }\n-\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n \n@@ -41,9 +41,9 @@\n <body>\n     <div class=\"container py-4\">\n \n         <!-- Bootstrap 5 starter form -->\n-        <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"contact.php\" method=\"POST\">\n+        <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"contact.php\" method=\"p\">\n \n             <!-- Name input -->\n             <div class=\"mb-3\">\n                 <label class=\"form-label\" for=\"name\">Name</label>\n"
+                },
+                {
+                    "date": 1673448155577,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n <body>\n     <div class=\"container py-4\">\n \n         <!-- Bootstrap 5 starter form -->\n-        <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"contact.php\" method=\"p\">\n+        <form id=\"contactForm\" data-sb-form-api-token=\"API_TOKEN\" action=\"contact.php\" method=\"post\">\n \n             <!-- Name input -->\n             <div class=\"mb-3\">\n                 <label class=\"form-label\" for=\"name\">Name</label>\n@@ -70,12 +70,9 @@\n                 <div class=\"invalid-feedback\" data-sb-feedback=\"message:required\">Message is required.</div>\n             </div>\n \n             <!-- Form submissions success message -->\n-            <div class=\"d-none\" id=\"submitSuccessMessage\">\n-                <div class=\"text-center mb-3\">Form submission successful!</div>\n-            </div>\n-\n+           \n             <!-- Form submissions error message -->\n             <div class=\"d-none\" id=\"submitErrorMessage\">\n                 <div class=\"text-center text-danger mb-3\">Error sending message!</div>\n             </div>\n"
+                },
+                {
+                    "date": 1673448160903,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,12 +71,9 @@\n             </div>\n \n             <!-- Form submissions success message -->\n            \n-            <!-- Form submissions error message -->\n-            <div class=\"d-none\" id=\"submitErrorMessage\">\n-                <div class=\"text-center text-danger mb-3\">Error sending message!</div>\n-            </div>\n+           \n \n             <!-- Form submit button -->\n             <div class=\"d-grid\">\n                 <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\"\n"
+                },
+                {
+                    "date": 1673448324414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n            \n \n             <!-- Form submit button -->\n             <div class=\"d-grid\">\n-                <button class=\"btn btn-primary btn-lg disabled\" id=\"submitButton\" type=\"submit\"\n+                <button class=\"btn btn-primary \" id=\"submitButton\" type=\"submit\"\n                     name=\"register\">Submit</button>\n             </div>\n \n         </form>\n"
+                },
+                {
+                    "date": 1673448472110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,12 @@\n             echo \"not good\";\n         }\n     }\n }\n+\n+\n+\n+\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n \n"
+                },
+                {
+                    "date": 1673448484304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,12 +24,12 @@\n             echo \"not good\";\n         }\n     }\n }\n+ if\n \n \n \n-\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n \n"
+                },
+                {
+                    "date": 1673448569875,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n             echo \"not good\";\n         }\n     }\n }\n- if\n+ if(_)\n \n \n \n ?>\n"
+                },
+                {
+                    "date": 1673448608336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,12 +24,12 @@\n             echo \"not good\";\n         }\n     }\n }\n- if(_)\n \n \n \n+\n ?>\n <!DOCTYPE html>\n <html lang=\"en\">\n \n"
+                },
+                {
+                    "date": 1673448615630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,14 @@\n         }\n     }\n }\n \n+  if (isset($_GET['fault'])) {\n+    echo '<div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\n+   <strong>Ohh no Sorry </strong>your password is wrong\n+   </div>';\n+  }\n+  ?>\n \n \n \n ?>\n"
+                },
+                {
+                    "date": 1673448621541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,14 +25,14 @@\n         }\n     }\n }\n \n-  if (isset($_GET['fault'])) {\n+  if (isset($_GET['suc'])) {\n     echo '<div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\n    <strong>Ohh no Sorry </strong>your password is wrong\n    </div>';\n   }\n-  ?>\n+  \n \n \n \n ?>\n"
+                },
+                {
+                    "date": 1673448629827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,9 @@\n         }\n     }\n }\n \n-  if (isset($_GET['success']) && $_GET['success) {\n+  if (isset($_GET['success']) && $_GET['succes) {\n     echo '<div class=\"alert alert-danger alert-dismissible fade show\" role=\"alert\">\n    <strong>Ohh no Sorry </strong>your password is wrong\n    </div>';\n   }\n"
+                }
+            ],
+            "date": 1673445541447,
+            "name": "Commit-0",
+            "content": "htm"
+        }
+    ]
+}
